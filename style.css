@@ -54,3 +54,7 @@ ul li:hover{
 #userInput{
     margin: 10px;
 }
+
+label{
+    color: white;
+}
