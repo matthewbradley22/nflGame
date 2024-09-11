@@ -13,6 +13,10 @@ nav ul li{
     padding: 10px;
 }
 
+#navigation li{
+    color: white;
+}
+
 h1, h2{
     color: white;
 }

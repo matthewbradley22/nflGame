@@ -25,7 +25,7 @@ function parseData(json) {
     const newItem = document.createElement("li");
     newItem.innerHTML = "Home: " + homeTeams[i] + "<br>";
     newItem.innerHTML += "Away: " + awayTeams[i] + "<br>";
-    newItem.innerHTML += "Spread (Away Team): " + spreads[i][0].point;
+    newItem.innerHTML += "Spread (Home Team): " + spreads[i][0].point;
     indSpreads.appendChild(newItem);
   }
 
