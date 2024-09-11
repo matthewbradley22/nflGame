@@ -21,7 +21,7 @@ async function getData() {
     const spreads = json.map((item) => item.bookmakers[0].markets[0].outcomes);
 
     for(let i=0;i<homeTeams.length;i++){
-        let newItem = document.createElement("li");
+        const newItem = document.createElement("li");
         newItem.innerHTML = "Home:" + homeTeams[i] + "<br>";
         newItem.innerHTML += "Away:" + awayTeams[i] + "<br>";
         newItem.innerHTML += "Spread (Away Team):" + spreads[i][0].point;
