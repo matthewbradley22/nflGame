@@ -19,9 +19,6 @@ async function getData() {
     const homeTeams = json.map((item) => item.home_team);
     const awayTeams = json.map((item) => item.away_team);
     const spreads = json.map((item) => item.bookmakers[0].markets[0].outcomes);
-    console.log(homeTeams);
-    console.log(awayTeams);
-    console.log(spreads);
 
     for(let i=0;i<homeTeams.length;i++){
         let newItem = document.createElement("li");
