@@ -1,4 +1,7 @@
-const indSpreads = document.querySelector("#indSpreads")
+const indSpreads = document.querySelector("#indSpreads");
+const youPicked = document.querySelector("#youPicked");
+const submit = document.querySelector("#submit");
+var currentPick = "";
 
 async function getData() {
   const url = " https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?apiKey=e5ee6d545df5c915eab5034543970edf&regions=us&markets=spreads&oddsFormat=american";
@@ -41,10 +44,14 @@ function clickable(){
       }
       e.target.style.backgroundColor = "rgb(141, 180, 141)";
       e.target.style.border = "medium solid black"
+      currentPick = (e.target.innerHTML) //.match(/\(home team(.)+/i)[0] + e.innerHTML.match(/.+?(?=<)/i)[0]);
     })
 }
 }
 
+submit.addEventListener("click", function(){
+  youPicked.innerHTML = `You picked <br> ${currentPick}`
+})
 
 
 getData();

@@ -2,6 +2,12 @@ body {
     background-color: rgb(109, 103, 218);
 }
 
+nav ul li{
+    display: inline;
+    padding: 10px;
+    list-style: none;
+}
+
 main,
 header {
     display: flex;
